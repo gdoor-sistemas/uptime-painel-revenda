@@ -1,20 +1,20 @@
 # Change these first
-owner: enz0rd # Your GitHub organization or username, where this repository lives
+owner: gdoor-sistemas # Your GitHub organization or username, where this repository lives
 repo: uptime-painel-revenda # The name of this repository
 
 sites:
   - name: Painel da Revenda
     url: https://painel.gdoor.com.br
-    icon: https://enz0rd.github.io/uptime-painel-revenda/gdoor-icon.svg
+    icon: https://gdoor-sistemas.github.io/uptime-painel-revenda/gdoor-icon.svg
   - name: Login da Revenda
     url: https://painel.gdoor.com.br/rev/login
-    icon: https://enz0rd.github.io/uptime-painel-revenda/gdoor-icon.svg
+    icon: https://gdoor-sistemas.github.io/uptime-painel-revenda/gdoor-icon.svg
 
 status-website:
   # GitHub Pages project site path
   baseUrl: /uptime-painel-revenda
-  logoUrl: https://enz0rd.github.io/uptime-painel-revenda/gdoor-zucchetti.png
-  favicon: https://enz0rd.github.io/uptime-painel-revenda/favicon.png
+  logoUrl: https://gdoor-sistemas.github.io/uptime-painel-revenda/gdoor-zucchetti.png
+  favicon: https://gdoor-sistemas.github.io/uptime-painel-revenda/favicon.png
   name: Status
   introTitle: "Status do Painel da Revenda"
   introMessage: Disponibilidade e tempo de resposta do [Painel da Revenda](https://painel.gdoor.com.br), verificados a cada 5 minutos.
@@ -24,7 +24,7 @@ status-website:
     - title: Acessar o painel →
       href: https://painel.gdoor.com.br/rev/login
   scripts:
-    - src: https://enz0rd.github.io/uptime-painel-revenda/status-bars.js
+    - src: https://gdoor-sistemas.github.io/uptime-painel-revenda/status-bars.js
   # Design Pattern "Clareza" (Interno_Web_Design_Pattern/tokens/tokens.css)
   css: |
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
