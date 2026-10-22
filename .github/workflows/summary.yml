@@ -29,7 +29,7 @@ jobs:
     name: Generate README
     runs-on: ubuntu-latest
     env:
-      GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
+      GH_APP_PRIVATE_KEY: ${{ secrets.GH_PAT }}
     steps:
       - name: Create GitHub App token
         id: app_token
