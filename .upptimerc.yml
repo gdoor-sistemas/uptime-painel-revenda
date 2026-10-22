@@ -13,8 +13,8 @@ sites:
 status-website:
   # GitHub Pages project site path
   baseUrl: /uptime-painel-revenda
-  logoUrl: /uptime-painel-revenda/gdoor-zucchetti.png
-  favicon: /uptime-painel-revenda/favicon.png
+  logoUrl: https://enz0rd.github.io/uptime-painel-revenda/gdoor-zucchetti.png
+  favicon: https://enz0rd.github.io/uptime-painel-revenda/favicon.png
   name: Status
   introTitle: "Status do Painel da Revenda"
   introMessage: Disponibilidade e tempo de resposta do [Painel da Revenda](https://painel.gdoor.com.br), verificados a cada 5 minutos.
@@ -24,7 +24,7 @@ status-website:
     - title: Acessar o painel →
       href: https://painel.gdoor.com.br/rev/login
   scripts:
-    - src: /uptime-painel-revenda/status-bars.js
+    - src: https://enz0rd.github.io/uptime-painel-revenda/status-bars.js
   # Design Pattern "Clareza" (Interno_Web_Design_Pattern/tokens/tokens.css)
   css: |
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
