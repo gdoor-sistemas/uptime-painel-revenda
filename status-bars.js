@@ -2,7 +2,7 @@
 // Verde = operacional, amarelo = desempenho degradado, vermelho = fora do ar.
 // A situação de cada dia vem das issues de incidente que o Upptime abre (label "status" + slug do site).
 (function () {
-  var OWNER = 'enz0rd';
+  var OWNER = 'gdoor-sistemas';
   var REPO = 'uptime-painel-revenda';
   var DAYS = 30;
   var DAY_MS = 86400000;
