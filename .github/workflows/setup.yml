@@ -29,6 +29,10 @@ jobs:
   release:
     name: Setup Upptime
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      issues: write
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
     steps:
