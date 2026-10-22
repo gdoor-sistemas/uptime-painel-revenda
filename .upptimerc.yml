@@ -3,27 +3,122 @@ owner: enz0rd # Your GitHub organization or username, where this repository live
 repo: uptime-painel-revenda # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Painel da Revenda
+    url: https://painel.gdoor.com.br
+  - name: Login da Revenda
+    url: https://painel.gdoor.com.br/rev/login
 
 status-website:
   # GitHub Pages project site path
   baseUrl: /uptime-painel-revenda
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  logoUrl: https://painel.gdoor.com.br/imgs/logo_300.png
+  favicon: https://painel.gdoor.com.br/favicon.ico
+  name: Status · Painel da Revenda
+  introTitle: "**Status do Painel da Revenda Gdoor**"
+  introMessage: Disponibilidade e tempo de resposta do [Painel da Revenda](https://painel.gdoor.com.br), verificados a cada 5 minutos.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Painel da Revenda
+      href: https://painel.gdoor.com.br/rev/login
+  # Design Pattern "Clareza" (Interno_Web_Design_Pattern/tokens/tokens.css)
+  css: |
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    :root {
+      --g-bg: #F7F7F5; --g-surface: #FFFFFF; --g-border: #E7E5E0; --g-border-strong: #DEDBD4;
+      --g-text: #1C1B19; --g-text-muted: #6B6862; --g-text-on-primary: #FFFFFF;
+      --g-primary: #C2410C; --g-primary-hover: #9A3412; --g-primary-text: #B4410C;
+      --g-ok-bg: #E6F4EA; --g-ok-fg: #1E6B34;
+      --g-danger-bg: #FCE8E6; --g-danger-fg: #A8261B;
+      --g-warn-bg: #FFF3D6; --g-warn-fg: #7A5300;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --g-bg: #111110; --g-surface: #1A1918; --g-border: #2E2C29; --g-border-strong: #3A3835;
+        --g-text: #EDECE9; --g-text-muted: #9C9992; --g-text-on-primary: #1C0E04;
+        --g-primary: #F97316; --g-primary-hover: #FB923C; --g-primary-text: #FB923C;
+        --g-ok-bg: #12291A; --g-ok-fg: #6FD394;
+        --g-danger-bg: #351513; --g-danger-fg: #FF8F84;
+        --g-warn-bg: #33270A; --g-warn-fg: #F2C14E;
+      }
+    }
+    :root {
+      --body-background-color: var(--g-bg);
+      --body-text-color: var(--g-text);
+      --card-background-color: var(--g-surface);
+      --card-border-color: var(--g-border);
+      --nav-background-color: var(--g-surface);
+      --nav-border-bottom-color: var(--g-border);
+      --nav-current-border-bottom-color: var(--g-primary);
+      --up-border-left-color: var(--g-ok-fg);
+      --down-border-left-color: var(--g-danger-fg);
+      --down-background-color: var(--g-danger-bg);
+      --degraded-border-left-color: var(--g-warn-fg);
+      --tag-color: var(--g-text-on-primary);
+      --tag-up-background-color: var(--g-ok-fg);
+      --tag-down-background-color: var(--g-danger-fg);
+      --tag-degraded-background-color: var(--g-warn-fg);
+      --change-background-color: var(--g-warn-bg);
+      --error-button-border-color: var(--g-primary);
+      --error-button-background-color: var(--g-primary);
+      --error-button-color: var(--g-text-on-primary);
+      --submit-button-border-color: var(--g-primary);
+      --submit-button-background-color: var(--g-primary);
+      --submit-button-color: var(--g-text-on-primary);
+    }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 14px; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.01em; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
+    h3 { opacity: 1; color: var(--g-text-muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    a { color: var(--g-primary-text); }
+    nav { font-weight: 500; }
+    nav .logo img { height: 28px; }
+    nav a { color: var(--g-text); }
+    article { border-radius: 12px; padding: 20px; }
+    article + article { margin-top: 12px; }
+    article.up, article.down, article.degraded { border-left-width: 4px; }
+    .tag { border-radius: 999px; font-weight: 600; padding: 4px 10px; }
+    .submit-button, a.error-button { border-radius: 8px; }
+    .submit-button:hover, a.error-button:hover { background: var(--g-primary-hover); }
+
+i18n:
+  activeIncidents: Incidentes ativos
+  allSystemsOperational: Todos os sistemas estão operacionais
+  incidentReport: "Relatório do incidente #$NUMBER →"
+  activeIncidentSummary: Aberto em $DATE com $POSTS atualizações
+  incidentTitle: Detalhes do incidente $NUMBER
+  incidentDetails: Detalhes do incidente
+  incidentFixed: Resolvido
+  incidentOngoing: Em andamento
+  incidentOpenedAt: Aberto em
+  incidentClosedAt: Fechado em
+  incidentBack: ← Voltar para todos os incidentes
+  pastIncidents: Incidentes anteriores
+  pastIncidentsResolved: Resolvido em $MINUTES minutos com $POSTS atualizações
+  liveStatus: Status em tempo real
+  overallUptime: "Disponibilidade geral: $UPTIME"
+  overallUptimeTitle: Disponibilidade geral
+  averageResponseTime: "Tempo médio de resposta: $TIMEms"
+  averageResponseTimeTitle: Tempo médio de resposta
+  sevelDayResponseTime: Tempo de resposta em 7 dias
+  responseTimeMs: Tempo de resposta (ms)
+  up: Operacional
+  down: Fora do ar
+  degraded: Degradado
+  loading: Carregando
+  footer: Monitoramento do [Painel da Revenda](https://painel.gdoor.com.br), feito com [Upptime](https://upptime.js.org)
+  errorTitle: Ocorreu um erro
+  errorIntro: Não foi possível obter o status mais recente.
+  errorText: Tente novamente em alguns instantes.
+  errorHome: Ir para a página inicial
+  scheduledMaintenance: Manutenção programada
+  pastScheduledMaintenance: Manutenções anteriores
+  duration24H: 24h
+  duration7D: 7d
+  duration30D: 30d
+  duration1Y: 1a
+  durationAll: tudo
+  locale: pt-BR
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
