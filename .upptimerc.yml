@@ -20,7 +20,7 @@ status-website:
   introMessage: Disponibilidade e tempo de resposta do [Painel da Revenda](https://painel.gdoor.com.br), verificados a cada 5 minutos.
   navbar:
     - title: Status
-      href: /
+      href: /uptime-painel-revenda
     - title: Acessar o painel →
       href: https://painel.gdoor.com.br/rev/login
   scripts:
