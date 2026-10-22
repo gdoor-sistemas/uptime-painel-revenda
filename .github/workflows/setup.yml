@@ -28,6 +28,10 @@ concurrency:
 jobs:
   release:
     name: Setup Upptime
+    permissions:
+      actions: write
+      contents: write
+      issues: read
     runs-on: ubuntu-latest
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}

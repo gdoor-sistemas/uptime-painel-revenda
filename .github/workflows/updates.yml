@@ -27,6 +27,8 @@ concurrency:
 jobs:
   release:
     name: Deploy updates
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
