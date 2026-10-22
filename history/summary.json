@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Painel da Revenda",
+    "url": "https://painel.gdoor.com.br",
+    "icon": "https://enz0rd.github.io/uptime-painel-revenda/gdoor-icon.svg",
+    "slug": "painel-da-revenda",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 862,
+    "timeDay": 862,
+    "timeWeek": 862,
+    "timeMonth": 862,
+    "timeYear": 862,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Login da Revenda",
+    "url": "https://painel.gdoor.com.br/rev/login",
+    "icon": "https://enz0rd.github.io/uptime-painel-revenda/gdoor-icon.svg",
+    "slug": "login-da-revenda",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 870,
+    "timeDay": 870,
+    "timeWeek": 870,
+    "timeMonth": 870,
+    "timeYear": 870,
+    "dailyMinutesDown": {}
+  }
+]
