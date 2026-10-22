@@ -28,6 +28,9 @@ jobs:
   release:
     name: Check status
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}
     steps:
